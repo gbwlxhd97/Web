@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--인터넷 익스플로어 버전호환 엣지로 열기-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>해커톤 장소 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=tlij2v0rtw"></script>
+</head>
+<body>
+    <br>
+    <a href="나의활동과이야기.html"><img src="/이미지/화살표.PNG" alt="뒤로가기." class="img-circle" style="width: 50px; height: 30px;"></a>
+    <br>
+<div id="map" style="width:50%;height:400px;"></div>
+해커톤 :2019 08 09  15시 시작 ~ 2019 08 10 6시 종료
+<script>
+//지도 위도와 경도
+var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.4961381,127.0719917,21),
+    zoom: 15
+});
+// 지도에 마크 표시
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.4961381,127.0719917,21),
+    map: map
+})
+
+</script>
+</body>
+</html>
